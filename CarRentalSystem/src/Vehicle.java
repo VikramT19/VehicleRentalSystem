@@ -1,10 +1,11 @@
 public class Vehicle {
-	private String vehicleID;
-	private String make;
-	private String model;
-	private int year;
-	private boolean isRented;
-	
+	private String vehicleID; // ID of vehicle	
+	private String make; // Make of vehicle
+	private String model; //Model of vehicle
+	private int year; // Year of vehicle
+	private boolean isRented; // If it is rented or not
+
+	// Constructor for Vehicle object
 	public Vehicle(String vehicleID, String make, String model, int year, boolean isRented) {
 		this.vehicleID = vehicleID;
 		this.make = make;
@@ -12,6 +13,8 @@ public class Vehicle {
 		this.year = year;
 		this.isRented = isRented;
 	}
+
+	// Getters and setters
 	
 	public String getVehicleID() {
 		return vehicleID;
@@ -45,13 +48,18 @@ public class Vehicle {
 	}
 }
 
+// Subclass for a car
+
 class Car extends Vehicle {
-	private String type;
+	private String type; // Type of car (Sedan, coupe, hatchback, etc.)
+
+	// Constructor for a Car object 
 	
 	public Car(String vehicleID, String make, String model, int year, boolean isRented, String type) {
 		super(vehicleID, make, model, year, isRented); 
 		this.type = type;
 	}
+	// Getters and setters for subclass
 
 	public String getType() {
 		return type;
@@ -62,15 +70,20 @@ class Car extends Vehicle {
 	}	
 }
 
+// Subclass for a motorcycle
+
 class Motorcycle extends Vehicle {
-	private int numberOfwheels;
-	
+	private int numberOfwheels; // Number of wheels of motorcycle
+
+	// Constructor for Motorcycle object
 	public Motorcycle(String vehicleID, String make, String model, int year, boolean isRented, int numberOfwheels) {
 		super(vehicleID, make, model, year, isRented);
 		this.numberOfwheels = numberOfwheels;
 		
 	}
 
+	// Getters and setters for subclass
+	
 	public int getNumberOfwheels() {
 		return numberOfwheels;
 	}
