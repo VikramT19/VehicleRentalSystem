@@ -1,6 +1,6 @@
 # Vehicle Rental System
 
-This simple Java application allows users to choose a vehicle from the inventory and rent them and return them.
+Java-based project implementing a Vehicle Rental System, featuring a flexible class hierarchy for cars and motorcycles. The system, built using object-oriented principles, includes a central "RentalSystem" for inventory management and rental operations. The console-based interface allows users to rent, return, and view available vehicles.
 
 ## How to Use
 
